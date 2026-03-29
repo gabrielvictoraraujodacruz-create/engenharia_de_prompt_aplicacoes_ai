@@ -1,0 +1,48 @@
+Atividade 4 : 
+Atulização da atividade 4 nao sei se onde coloquei o link da conversa a professora pode ver entao criei novamente o arquivo 
+
+https://chatgpt.com/s/t_69c5a1d432988191b06b420402e4c81c
+
+
+VERSAO EM PYTHON:
+-Resposta ruim :
+def media(lista)
+soma = 0
+for i in lista:
+soma += i
+return soma / len(lista)
+
+
+Resposta prompt mestre :
+def calcular_media(lista_numeros):
+"""
+Calcula a média de uma lista de números.
+Parâmetros:
+lista_numeros (list): Lista contendo números
+Retorna:
+float: Média dos números
+Levanta:
+ValueError: Se a lista estiver vazia ou contiver valores inválidos
+"""
+# Verifica se a lista está vazia
+if not lista_numeros:
+raise ValueError("A lista não pode estar vazia.")
+# Verifica se todos os elementos são números
+for item in lista_numeros:
+if not isinstance(item, (int, float)):
+raise ValueError("Todos os elementos devem ser números.")
+# Soma os elementos da lista
+soma = sum(lista_numeros)
+# Calcula a média
+media = soma / len(lista_numeros)
+return media
+# Casos de teste
+# Caso 1: Lista normal
+print(calcular_media([10, 20, 30])) # Esperado: 20.0
+# Caso 2: Lista com um número
+print(calcular_media([5])) # Esperado: 5.0
+# Caso 3: Lista vazia (erro)
+print(calcular_media([])) # Esperado: erro
+
+
+Obs. a professora me informou que nao precisaria alterar , mas quis deixar melhor para ela (sei que ficou muito vago o prompt / eu achei feio/ruim mas irei deixar para melhorar na proxima vez) 
