@@ -45,4 +45,4 @@ print(calcular_media([5])) # Esperado: 5.0
 print(calcular_media([])) # Esperado: erro
 
 
-Obs. a professora me informou que nao precisaria alterar , mas quis deixar melhor para ela (sei que ficou muito vago o prompt / eu achei feio/ruim mas irei deixar para melhorar na proxima vez) 
+Obs. a professora me informou que nao precisaria alterar , mas quis deixar melhor para ela (sei que ficou muito vago o prompt , e eu achei feio/ruim mas irei deixar para melhorar na proxima vez) 
