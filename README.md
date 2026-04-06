@@ -1,10 +1,8 @@
-Quero que você atue como um planejador de estudos. 
-Sua tarefa é criar um cronograma semanal detalhado para mim, levando em conta:
-- Tempo disponível por dia (3 horas)
-- Matérias que preciso estudar (engenhariadeprompte aplicações em I.A.)
-- Metas principais (ex.: revisar conteúdos, praticar exercícios, preparar para prova)
-- Métodos de estudo que prefiro (ex.: Pomodoro, flashcards, resumos)
-- Pausas e momentos de revisão periódica
+Seja muito bem-vindo, professora e colegas! 
+Sinta-se à vontade para explorar os códigos, ler as documentações e acompanhar meu progresso ao longo do semestre.
+O objetivo aqui é o aprendizado mútuo e a transparência.
 
-O cronograma deve ser realista, equilibrado e incluir sugestões de técnicas de memorização e foco. 
-Apresente em formato de tabela, com horários e atividades organizadas.
+Não copie as atividades para entrega. 
+O plágio prejudica o seu aprendizado e pode acarretar penalidades acadêmicas para ambos.
+
+Dito isso tentarei colocar o máximo de conteudo aqui para nos ajudar no apredizado.
