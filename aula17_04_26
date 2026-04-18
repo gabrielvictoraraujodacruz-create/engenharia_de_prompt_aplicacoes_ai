@@ -1,0 +1,86 @@
+missao 1:
+Criar um programa que organize arquivos bagunçados em pastas automaticamente, baseando-se apenas na extensão do arquivo (ex: pdf, jpg).
+Crie 10 arquivos diferentes e organize tudo. use a biblioteca OS e SHUTIL.
+Depois faça a IA comentar o codigo em execução.
+
+import os
+import shutil
+
+def setup_and_organize():
+    # 1. Setup: Criando 10 arquivos de teste
+    test_files = [
+        'relatorio.pdf', 'foto_ferias.jpg', 'notas.txt', 
+        'script.py', 'planilha.csv', 'apresentacao.pdf', 
+        'logo.jpg', 'backup.zip', 'config.json', 'memo.txt'
+    ]
+    
+    print("--- Iniciando Setup de Arquivos ---")
+    for file in test_files:
+        with open(file, 'w') as f:
+            f.write("Conteudo de teste")
+        print(f"Arquivo criado: {file}")
+
+    # 2. Logica de Organização
+    print("\n--- Iniciando Organização (Sorting) ---")
+    
+    # Mapeamento de Extensões para Pastas (Mapping)
+    extension_map = {
+        '.pdf': 'Documents',
+        '.jpg': 'Images',
+        '.txt': 'Text_Files',
+        '.py': 'Scripts',
+        '.csv': 'Data',
+        '.zip': 'Archives',
+        '.json': 'Config'
+    }
+
+    # Listar arquivos no diretório atual
+    files = [f for f in os.listdir('.') if os.path.isfile(f)]
+
+    for file in files:
+        # Extrair a extensão (Parsing the extension)
+        name, ext = os.path.splitext(file)
+        
+        if ext in extension_map:
+            target_folder = extension_map[ext]
+            
+            # Criar pasta de destino se não existir
+            if not os.path.exists(target_folder):
+                os.makedirs(target_folder)
+                print(f"Diretório criado: {target_folder}")
+
+            # Definir caminhos (Paths)
+            source = file
+            destination = os.path.join(target_folder, file)
+
+            # Mover o arquivo
+            shutil.move(source, destination)
+            print(f"Movido: {source} -> {target_folder}/")
+
+if __name__ == "__main__":
+    setup_and_organize()
+
+
+missao 2 : O problema
+
+Desenvolver um script que consulte uma API publica (ViaCEP) e retorne as informações de endereço formatas de maneira legível.
+estrategia da IA:
+Provoque um erro intencional na URL da API.
+Use a IA do Replit para indentificar a falha de requisição e sugerir a correção (tratamento de exceções try/except).
+
+Requisitos :
+integração com API ViaCEP funcional
+JSON recebido é formatado e impresso com clareza.
+Erros de conexão ou CEP invalido são tratados sem 'quebrar' o script
+
+
+
+
+
+
+
+
+
+
+
+
