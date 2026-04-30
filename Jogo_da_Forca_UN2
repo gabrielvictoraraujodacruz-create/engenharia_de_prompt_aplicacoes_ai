@@ -1,0 +1,49 @@
+Jogo da forca refatorado pela IA(gemini):
+
+import random
+
+def jogar_forca():
+    palavras = ["python", "algoritmo", "software", "variavel", "codigo"]
+    palavra_secreta = random.choice(palavras)
+    
+    # Uso de Sets (conjuntos) no lugar de Listas
+    letras_certas = set()
+    letras_erradas = set()
+    tentativas = 6
+
+    print("--- Jogo da Forca ---")
+
+    while tentativas > 0:
+        # List Comprehension para montar a palavra na tela
+        display = [letra if letra in letras_certas else "_" for letra in palavra_secreta]
+        print(f"\nPalavra: {' '.join(display)}")
+        
+        # Lógica de vitória simplificada
+        if set(palavra_secreta).issubset(letras_certas):
+            print(f"\nVitória! A palavra era: {palavra_secreta}")
+            return  # Encerra a função imediatamente
+
+        print(f"Erros: {', '.join(letras_erradas)} | Tentativas restantes: {tentativas}")
+        
+        chute = input("Digite uma letra: ").lower().strip()
+
+        if len(chute) != 1 or not chute.isalpha():
+            print("Entrada inválida. Digite apenas uma letra.")
+            continue
+
+        # Verifica se o chute já está em algum dos dois sets
+        if chute in letras_certas | letras_erradas: 
+            print("Você já tentou essa letra.")
+            continue
+
+        if chute in palavra_secreta:
+            letras_certas.add(chute)
+        else:
+            letras_erradas.add(chute)
+            tentativas -= 1
+
+    print(f"\nFim de jogo! A palavra correta era: {palavra_secreta}")
+
+# Ponto de entrada padrão em Python
+if __name__ == "__main__":
+    jogar_forca()
