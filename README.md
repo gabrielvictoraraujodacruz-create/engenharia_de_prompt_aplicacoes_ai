@@ -10,12 +10,13 @@ Repo da matéria de IA. Tem as atividades das aulas (tokens, probabilidade, prom
 
 | Arquivo | O que é |
 |---|---|
-| [`Atividade aula 3`](Atividade%20aula%203) | Tokens e as possibilidades que o modelo gera |
-| [`Atividade aula 4`](Atividade%20aula%204) | Prompt ruim x prompt bom, com código em Python |
-| [`Atividade aula 5`](Atividade%20aula%205) | Resenha do filme *Ela* (Her) e superinteligência |
+| [`atividade_aula_3.txt`](atividade_aula_3.txt) | Tokens e as possibilidades que o modelo gera |
+| [`atividade_aula_4.txt`](atividade_aula_4.txt) | Prompt ruim x prompt bom, com código em Python |
+| [`calcular_media.py`](calcular_media.py) | O código em Python da atividade 4, com os casos de teste |
+| [`atividade_aula_5.txt`](atividade_aula_5.txt) | Resenha do filme *Ela* (Her) e superinteligência |
 | [`Aula_07_progamacao_assistida.ipynb`](Aula_07_progamacao_assistida.ipynb) | Programação assistida por IA |
 | [`Aula_08_Automacoes_de_IA.ipynb`](Aula_08_Automacoes_de_IA.ipynb) | Automações com IA (abre no Colab) |
-| [`Resumo_da_Unidade_2`](Resumo_da_Unidade_2) | O que eu aprendi na Unidade 2 |
+| [`resumo_da_unidade_2.txt`](resumo_da_unidade_2.txt) | O que eu aprendi na Unidade 2 |
 
 ## 🤝 Recado
 
